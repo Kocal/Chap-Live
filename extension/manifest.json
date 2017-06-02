@@ -1,0 +1,25 @@
+{
+  "name": "Chap Live",
+  "description": "Chap Live est une extension qui notifie l'utilisateur si Chap est en train de stream sur Twitch.",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "icons": {
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "permissions": [
+    "notifications",
+    "https://api.twitch.tv/"
+  ],
+  "browser_action": {
+    "default_title": "Chap Live",
+    "default_icon": {
+      "48": "icons/icon_48.png"
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
